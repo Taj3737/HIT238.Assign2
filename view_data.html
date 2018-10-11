@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>View entries</title>
+  <meta name="description" content="">
+  <meta name="author" content="Ush Solutions">
+  <link rel="stylesheet" href="style/stylesheet.css">
+  <link rel="manifest" href="js/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="green">
+  <meta name="apple-mobile-web-app-title" content="Fitness App">
+  <meta name="msapplication-starturl" content="index.html">
+</head>
+
+<body>
+	<a href="index.html"><img src="assets/home.png" style="width:82px; height:86px" title="home"></a>
+    <div class='tableDiv'>
+      <table class='tableForEntries'>
+        <thead class='tableHead'>
+          <tr>
+            <th colspan='2' >List of entries</th>
+          </tr>
+        </thead>
+        <tbody id='tableBody'>
+          <tr>
+            <td>Date</td>
+            <td>Exercise</td>
+            <td>Weights</td>
+            <td>Sets</td>
+            <td>Type</td>
+          </tr>
+        </tbody>
+        <p id='forAnError'> </p>
+      </table>
+    </div>
+    <div class='createButtons'>
+      <a href='Excersices.html' class='buttons'>Back To Excercises</a>
+     
+    </div>
+
+  </div>
+
+</body>
+
+<script src='js/add_data.js'></script>
+<script> view_data();</script>
+</html>
