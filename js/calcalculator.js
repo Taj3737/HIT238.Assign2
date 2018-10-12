@@ -23,7 +23,7 @@ function calculateTip() {
 			
 			if(weight >= 187 &&  weight <= 258)
 				{
-					document.getElementById("w1").innerHTML = "ExtremeObesity";
+					document.getElementById("w1").innerHTML = "Extremely Obese";
 				}
 		}
 	
