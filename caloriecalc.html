@@ -1,59 +1,68 @@
 <!Doctype html>
 <html>
-   <head>
-      <title>Calorine Calculator</title>
-      <link rel="stylesheet" href="style/style3.css">
-   </head>
-   <body>
-      <a href="index.html"><img src="assets/home.png" style="width:82px; height:86px" title="home"></a>
-      <div id="container">
-         <h1>Calorie Calculator</h1>
-         <div id="calculator">
-            <form method="post">
-               <table align="center">
-                  <tr>
-                     <br>
-                     <td>Age</td>
-                     <td><input type="text" id="age" /></td>
-                  </tr>
-                  <tr>
-                     <br>
-                     <td>Gender</td>
-                     <td><input id="male" type="radio" name="gender" value="m"> Male
-                        <input id="female" type="radio" name="gender" value="f"> Female<br>
-                     </td>
-                  </tr>
-                  <tr>
-                     <br>
-                     <td>Height</td>
-                     <td><input id="height" type="text"  /><span>Feet</span></td>
-                  </tr>
-                  <tr>
-                     <br/>
-                     <td>Weight</td>
-                     <td><input id="weight" type="text"  /><span>lbs</span></td>
-                  </tr>
-                  <tr>
-                     <td>Activity</td>
-                     <td>
-                        <select id="activity">
-                           <option selected disabled>-- Choose an Option --</option>
-                           <option value="0">No Activity</option>
-                           <option value="1">Moderate 30 Minutes</option>
-                           <option value="2">Moderate 60 Minutes</option>
-                        </select>
-                  </tr>
-               </table>
-            </form>
-            <button type="submit" onClick="calculateTip()">Calculate</button>
-         </div>
-         <div id="caleries" class="c" onClick="">
-            <sup>Calories Needed To Mantain Weight</sup><span id="c1"></span><br>
-            <sup>Calories Needed To Loss 1lb Per Week</sup><span id="c2"></span><br>
-            <sup>Calories Needed To Loss 2lb Per Week</sup><span id="c3"></span><br>
-            <sup>You are </sup><span id="w1"></span><br>
-         </div>
-      </div>
-   </body>
+    <head>
+        <title>Calorine Calculator</title>
+        <link rel="manifest" href="js/manifest.json">
+        <link rel="stylesheet" href="style/style3.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <link rel="manifest" href="js/manifest.json">
+        <meta name="author" content="Taj Chahal">
+        <meta name="description" content="calorie calculator,gym,fitness,health">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="green">
+        <meta name="apple-mobile-web-app-title" content="Dynamic Fitness App">
+        <meta name="msapplication-starturl" content="index.html">
+    <body>
+        <a href="index.html"><img src="assets/home.png" style="width:82px; height:86px" title="home"></a>
+        <div id="container">
+            <h1>Calorie Calculator</h1>
+            <div id="calculator">
+                <form method="post">
+                    <table align="center">
+                        <tr>
+                            <br>
+                            <td>Age</td>
+                            <td><input type="text" id="age" /></td>
+                        </tr>
+                        <tr>
+                            <br>
+                            <td>Gender</td>
+                            <td><input id="male" type="radio" name="gender" value="m"> Male
+                                <input id="female" type="radio" name="gender" value="f"> Female<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <br>
+                            <td>Height</td>
+                            <td><input id="height" type="text"  /><span>Feet</span></td>
+                        </tr>
+                        <tr>
+                            <br/>
+                            <td>Weight</td>
+                            <td><input id="weight" type="text"  /><span>lbs</span></td>
+                        </tr>
+                        <tr>
+                            <td>Activity</td>
+                            <td>
+                                <select id="activity">
+                                    <option selected disabled>-- Choose an Option --</option>
+                                    <option value="0">No Activity</option>
+                                    <option value="1">Moderate 30 Minutes</option>
+                                    <option value="2">Moderate 60 Minutes</option>
+                                </select>
+                        </tr>
+                    </table>
+                </form>
+                <button type="submit" onClick="calculateTip()">Calculate</button>
+            </div>
+            <div id="caleries" class="c" onClick="">
+                <sup>Calories Needed To Mantain Weight</sup><span id="c1"></span><br>
+                <sup>Calories Needed To Loss 1lb Per Week</sup><span id="c2"></span><br>
+                <sup>Calories Needed To Loss 2lb Per Week</sup><span id="c3"></span><br>
+                <sup>You are </sup><span id="w1"></span><br>
+            </div>
+        </div>
+    </body>
 </html>
 <script type="text/javascript" src="js/calcalculator.js"></script>
